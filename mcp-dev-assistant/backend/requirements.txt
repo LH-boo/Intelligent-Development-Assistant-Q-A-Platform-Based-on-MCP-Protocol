@@ -1,0 +1,18 @@
+fastapi>=0.112.0 #fastapi框架创建接口Web 后端框架，
+#用于编写 RESTful API 接口，实现对话接口、
+#知识库上传、MCP 管理、用户登录等后端业务接口，高性能、原生支持 Pydantic 数据校验
+uvicorn>=0.30 #启动fastapi服务
+sqlalchemy>=2.0
+pymysql
+alembic>=1.13
+fastmcp>=0.4
+chromadb>=0.5
+python‑dotenv
+pydantic>=2.0
+python‑jose
+passlib[bcrypt]
+python‑multipart
+openai>=1.50          # 兼容通义/DeepSeek OpenAI兼容接口
+pypdf                 # pdf解析
+markdown‑it‑py        # md解析
+pytest
