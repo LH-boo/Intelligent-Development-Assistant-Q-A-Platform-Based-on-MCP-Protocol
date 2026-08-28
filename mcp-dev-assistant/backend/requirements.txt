@@ -7,12 +7,12 @@ pymysql
 alembic>=1.13
 fastmcp>=0.4
 chromadb>=0.5
-python‑dotenv
+python-dotenv
 pydantic>=2.0
-python‑jose
+python-jose
 passlib[bcrypt]
-python‑multipart
+python-multipart
 openai>=1.50          # 兼容通义/DeepSeek OpenAI兼容接口
 pypdf                 # pdf解析
-markdown‑it‑py        # md解析
+markdown-it-py        # md解析
 pytest
