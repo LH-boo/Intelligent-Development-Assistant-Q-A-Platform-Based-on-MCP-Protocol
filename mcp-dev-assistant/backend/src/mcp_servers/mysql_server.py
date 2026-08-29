@@ -1,0 +1,1 @@
+#mysql查询mcp工具（sql防护过滤）
