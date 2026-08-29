@@ -85,3 +85,13 @@ CREATE TABLE `knowledge_chunk` (
 
 -- 插入一条测试管理员账号，密码哈希这里仅示例，实际项目用bcrypt生成
 INSERT INTO `user` (`username`, `password_hash`, `role`) VALUES ('admin', '$2b$12$xxxx', 'admin');
+
+/*
+表名	用途
+user	存储账号密码、角色
+chat_session	每一次对话会话（会话标题、所属用户）
+chat_message	会话下一条条用户 / AI 消息
+mcp_tool_log	答辩重点，记录 MCP 工具调用：工具名、入参、出参、耗时、成败
+knowledge_doc	上传的文档：文件名、类型、逻辑删除标记
+knowledge_chunk	文档切分后的片段，保存文本和 Chroma 向量 ID
+*/
