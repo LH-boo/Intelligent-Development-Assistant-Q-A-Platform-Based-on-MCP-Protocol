@@ -20,3 +20,4 @@ DB_CONFIG = {
     "password": MYSQL_PASSWORD,
     "database": MYSQL_DB,
 }
+API_KEY_A_LI = os.getenv("LLM_API_KEY_A_LI")
