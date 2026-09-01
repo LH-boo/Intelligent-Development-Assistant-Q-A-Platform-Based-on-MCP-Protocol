@@ -1,6 +1,15 @@
 #数据库会话搭建
+import os
+import sys
+
+# 保证直接运行本文件（python src/db/session.py）时能找到 backend 下的模块
+BASE_DIR = os.path.abspath(os.path.join(__file__, "../../../"))
+sys.path.insert(0, BASE_DIR)
+
 from sqlalchemy import create_engine
+
 from sqlalchemy.orm import sessionmaker
+
 from src.config.settings import settings
 
 # 组装mysql连接url
